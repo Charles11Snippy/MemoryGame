@@ -11,7 +11,7 @@ const loseWindow = document.querySelector('#lose-window');
 const timerEl = document.querySelector('#timer');
 let score = 0;
 const openCards = [];
-const timeLeft = 10;
+const timeLeft = 60;
 let intervalId = null;
 let gameStarted = false;
 
