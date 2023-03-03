@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Memory Game</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/main.css">
+</head>
+<body>
+    <header class="header">
+        <div class="modal-wrapper" id="modal-wrapper">
+            <div class="overlay"></div>
+            <div class="modal-window" id="main-modal">
+                <label for="name" class="name-label">
+                    Enter your name
+                </label>
+                <input type="text" class="name__input" id="name__input" placeholder="Your name...">
+                <button type="button" class="modal__btn" id="modal__btn">
+                    Go
+                </button>
+            </div>
+        </div>
+    </header>
+    <section class="game">
+        <div class="container">
+            <h1 class="header__title">
+                Memory Game
+            </h1>
+            <div class="game-container">
+                <div class="game-wrapper" id="game-wrapper">
+                </div>
+                <div class="score-wrapper" id="score-wrapper">
+                    <div class="score-window">
+                        <div class="score-window-block score-window-block_1">
+                            <span class="player__title">
+                                Player Name:
+                            </span>
+                            <span class="player__name" id="player__name"></span>
+                        </div>
+                        <div class="score-window-block score-window-block_2">
+                            <span class="player-score__title">
+                                Player Score:
+                            </span>
+                            <span class="score" id="score"></span>
+                        </div>
+                        <div class="score-window-block score-window-block_3">
+                            <span class="time__title">
+                                Time left:
+                            </span>
+                            <span class="timer" id="timer"></span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <footer class="footer">
+        <div class="container">
+            <div class="won-modal-window" id="win-window">
+                <div class="overlay"></div>
+                <div class="window won-window" id="won">
+                    <h2 class="won__title">
+                        You are the Winner
+                    </h2>
+                </div>
+            </div>
+            <div class="lose-modal-window" id="lose-window">
+                <div class="overlay"></div>
+                <div class="window lose-window" id="lose">
+                    <h2 class="lose__title">
+                        You are the Loser
+                    </h2>
+                </div>
+            </div>
+            <button class="startButton" id="startButton">
+                Start Game
+            </button>
+        </div>
+    </footer>
+    <script src="js/gsap.min.js"></script>
+    <script src="js/EasePack.min.js"></script>
+    <script src="js/main.js"></script>
+</body>
+</html>
